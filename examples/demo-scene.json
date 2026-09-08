@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "title": "Cosmic Fest \u2014 kaleid demo",
+  "clips": [
+    "https://5sldq2ipzrgnonkh.public.blob.vercel-storage.com/loops/cosmic-fest-part2/cosmic-fest-part2__51f3eb4f__35.mp4",
+    "https://5sldq2ipzrgnonkh.public.blob.vercel-storage.com/loops/cosmic-fest-part2/cosmic-fest-part2__4b5fe979__34.mp4",
+    "https://5sldq2ipzrgnonkh.public.blob.vercel-storage.com/loops/cosmic-fest-part2/cosmic-fest-part2__3ef3e7e5__33.mp4",
+    "https://5sldq2ipzrgnonkh.public.blob.vercel-storage.com/loops/cosmic-fest-part2/cosmic-fest-part2__c4e5a136__32.mp4"
+  ],
+  "clipIndex": 0,
+  "fx": {
+    "videoSpeed": {
+      "enabled": true,
+      "base": 1.0,
+      "syncBand": "none",
+      "syncMultiplier": 0,
+      "isTrigger": false,
+      "triggerThreshold": 0.5,
+      "triggerCount": 1,
+      "delay": 0,
+      "decay": 20,
+      "triggerAttack": 0,
+      "triggerRelease": 0,
+      "triggerHold": 0,
+      "triggerEaseOutShape": "smooth"
+    },
+    "colorAdjust": {
+      "enabled": true,
+      "base": 0.2,
+      "syncBand": "none",
+      "syncMultiplier": 0,
+      "isTrigger": false,
+      "triggerThreshold": 0.5,
+      "triggerCount": 1,
+      "params": {
+        "contrast": 1.15,
+        "hue": 0.0,
+        "saturation": 1.25,
+        "hueRev": 2
+      },
+      "delay": 0,
+      "decay": 20,
+      "triggerAttack": 0,
+      "triggerRelease": 0,
+      "triggerHold": 0,
+      "triggerEaseOutShape": "smooth"
+    },
+    "rgbDelay": {
+      "base": 0.35,
+      "enabled": true,
+      "syncBand": "none",
+      "syncMultiplier": 0,
+      "isTrigger": false,
+      "triggerThreshold": 0.5,
+      "triggerCount": 1,
+      "delay": 0,
+      "decay": 20,
+      "triggerAttack": 0,
+      "triggerRelease": 0,
+      "triggerHold": 0,
+      "triggerEaseOutShape": "smooth"
+    },
+    "kaleid": {
+      "base": 6,
+      "params": {
+        "angle": 0,
+        "videoZoom": 1,
+        "videoX": 0,
+        "videoY": 0
+      },
+      "enabled": true,
+      "syncBand": "none",
+      "syncMultiplier": 0,
+      "isTrigger": false,
+      "triggerThreshold": 0.5,
+      "triggerCount": 1,
+      "delay": 0,
+      "decay": 20,
+      "triggerAttack": 0,
+      "triggerRelease": 0,
+      "triggerHold": 0,
+      "triggerEaseOutShape": "smooth"
+    },
+    "transition": {
+      "enabled": false,
+      "base": 0,
+      "syncBand": "none",
+      "syncMultiplier": 0,
+      "isTrigger": false,
+      "triggerThreshold": 0.5,
+      "triggerCount": 1,
+      "params": {
+        "type": 0,
+        "duration": 1
+      },
+      "delay": 0,
+      "decay": 20,
+      "triggerAttack": 0,
+      "triggerRelease": 0,
+      "triggerHold": 0,
+      "triggerEaseOutShape": "smooth"
+    },
+    "autoMix": {
+      "enabled": true,
+      "base": 8,
+      "syncBand": "none",
+      "syncMultiplier": 0,
+      "isTrigger": false,
+      "triggerThreshold": 0.5,
+      "triggerCount": 1,
+      "params": {
+        "advanceMode": "sequential",
+        "advanceWhen": "time"
+      },
+      "delay": 0,
+      "decay": 20,
+      "triggerAttack": 0,
+      "triggerRelease": 0,
+      "triggerHold": 0,
+      "triggerEaseOutShape": "smooth"
+    }
+  },
+  "activeFxList": [
+    "kaleid",
+    "colorAdjust",
+    "rgbDelay"
+  ]
+}

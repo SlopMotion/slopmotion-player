@@ -1,0 +1,32 @@
+{
+  "name": "slopmotion-player",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hydra Synth player for a SlopMotion scene JSON source",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "src/install.ts",
+    "examples",
+    "README.md"
+  ],
+  "scripts": {
+    "install:host": "npx tsx src/install.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlopMotion/slopmotion-player.git"
+  },
+  "homepage": "https://github.com/SlopMotion/slopmotion-player"
+}
