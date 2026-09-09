@@ -31,15 +31,12 @@
       }
     },
     {
-      "type": "workflows",
+      "type": "required_status_checks",
       "parameters": {
         "do_not_enforce_on_create": true,
-        "workflows": [
-          {
-            "path": ".github/workflows/ci.yml",
-            "ref": "refs/heads/main",
-            "repository_id": 1361655467
-          }
+        "strict_required_status_checks_policy": true,
+        "required_status_checks": [
+          { "context": "check" }
         ]
       }
     }
