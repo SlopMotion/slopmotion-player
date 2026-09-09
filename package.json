@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "description": "Hydra Synth player for a SlopMotion scene JSON source",
+  "license": "AGPL-3.0-only",
+  "author": "SlopMotion",
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -19,9 +21,12 @@
   "module": "./dist/index.js",
   "types": "./index.d.ts",
   "files": [
+    "LICENSE",
+    "NOTICE",
+    "licenses",
     "dist",
     "index.d.ts",
-    "src/install.ts",
+    "src",
     "examples",
     "README.md"
   ],
