@@ -14,11 +14,33 @@ mountPlayer({
 
 ## Install
 
+Released packages will land on npm. Until then, install from GitHub `main` (last promoted release):
+
 ```bash
 npm install github:SlopMotion/slopmotion-player
 ```
 
+Pre-release work lives on `staging`:
+
+```bash
+npm install github:SlopMotion/slopmotion-player#staging
+```
+
 Or clone this repo and link it locally.
+
+## Branching and releases
+
+- **`staging`** — integration line. Open feature PRs here. Maintainers can squash-merge their own PRs after CI.
+- **`main`** — public default and upcoming npm source. Only squash-merges from `staging`, with one approving review and green CI. Direct pushes, force-pushes, and deletion are blocked.
+- **`vX.Y.Z` tags** — created by repository admins on `main`. A `v*` tag runs `.github/workflows/publish.yml` against the `publish` environment.
+
+npm is not live yet (`private: true` in `package.json` keeps the publish job from shipping). When it is:
+
+1. Register the GitHub repo as an npm Trusted Publisher for workflow `publish.yml`, stage-only.
+2. Set `"private": false`.
+3. Open a `staging` → `main` PR, bump `version`, merge.
+4. Tag from `main`: `git tag v0.1.0 && git push origin v0.1.0`
+5. Approve the GitHub `publish` environment, then approve the staged package on npm.
 
 ## Scaffold a host
 

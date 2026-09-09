@@ -4,6 +4,10 @@
   "private": true,
   "type": "module",
   "description": "Hydra Synth player for a SlopMotion scene JSON source",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "exports": {
     ".": {
       "types": "./index.d.ts",

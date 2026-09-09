@@ -1,0 +1,23 @@
+{
+  "name": "Release tags are semver",
+  "target": "tag",
+  "enforcement": "active",
+  "bypass_actors": [],
+  "conditions": {
+    "ref_name": {
+      "include": ["refs/tags/v*"],
+      "exclude": []
+    }
+  },
+  "rules": [
+    {
+      "type": "tag_name_pattern",
+      "parameters": {
+        "name": "semver",
+        "negate": false,
+        "operator": "regex",
+        "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"
+      }
+    }
+  ]
+}
