@@ -77,3 +77,7 @@ player.destroy();
 ```
 
 Keyboard: space play/pause, arrows change clip, `F` fullscreen.
+
+## License
+
+[AGPL-3.0-only](LICENSE). The player bundles [hydra-synth](https://github.com/ojack/hydra-synth) (AGPL). Attribution and corresponding-source layout are in [NOTICE](NOTICE). `src/engine/` is the TypeScript/GLSL snapshot compiled into `dist/index.js`.
