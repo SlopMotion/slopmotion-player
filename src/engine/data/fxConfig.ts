@@ -2,7 +2,7 @@ import {
   Shuffle, Dices, Aperture, Palette, Activity, Grid, Waves, Binary, Repeat,
   MonitorX, Sparkles, Hexagon, Layers, Moon, Radio, Target, RotateCw,
   Move, MoveVertical, Vibrate, Clock, ArrowLeftRight, Wind,
-  FastForward, ZoomIn, SkipForward, SkipBack, Grid3x3, Sunset, Sun, SunMedium, Droplets,
+  FastForward, ZoomIn, SkipForward, SkipBack, Grid3x3, Sunset, Sun, Droplets,
   ArrowDownUp, AlignJustify, VolumeX,   Columns2, Blend, Focus,
   FlipHorizontal, LayoutGrid, CircleDot, ScanLine, Crosshair, Code2, PictureInPicture2, Globe, Orbit, Type, Zap, Box, Sparkle, Share2, Map, Ghost, Video, Snowflake, Dna, Shapes, Pipette, Clapperboard, Spline, Rainbow,
 } from "lucide-react";
@@ -960,21 +960,6 @@ export const AVAILABLE_FX = [
       { key: "mode", label: "0=H 1=radial 2=diagonal", min: 0, max: 2, step: 1, default: 0 },
       { key: "threshold", label: FX_PARAM.sensitivity, min: 0, max: 1, step: 0.01, default: 0.6 },
       { key: "decay", label: "Decay", min: 0, max: 1, step: 0.01, default: 0.72 },
-    ],
-  },
-  {
-    category: "Color & grade",
-    key: "hdr",
-    label: "HDR",
-    icon: SunMedium,
-    min: 0,
-    max: 1,
-    step: 0.01,
-    baseLabel: FX_PARAM.amount,
-    extraParams: [
-      { key: "blackFloor", label: "Black floor", min: 0, max: 0.3, step: 0.01, default: 0.08 },
-      { key: "highlights", label: "Highlight boost", min: 0, max: 2, step: 0.05, default: 0.85 },
-      { key: "knee", label: FX_PARAM.softness, min: 0, max: 1, step: 0.02, default: 0.5, tier: "advanced" },
     ],
   },
   {
