@@ -371,16 +371,6 @@ export const HYDRA_FX_TEMPLATE_RAW: FolderConfig["fx"] = {
     triggerCount: 1,
     params: { segmentSec: 1.25, maxFrames: 60, captureFps: 24 },
   },
-  hdr: {
-    enabled: false,
-    base: 0.7,
-    syncBand: "none",
-    syncMultiplier: 0.0,
-    isTrigger: false,
-    triggerThreshold: 0.5,
-    triggerCount: PULSE_HIT_DEFAULTS.triggerCount,
-    params: { blackFloor: 0.08, highlights: 0.85, knee: 0.5 },
-  },
   ghostFlow: {
     enabled: false,
     base: 0.42,
