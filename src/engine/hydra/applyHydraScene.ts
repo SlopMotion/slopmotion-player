@@ -1548,15 +1548,6 @@ export function applyHydraScene(deps: ApplyHydraSceneDeps) {
           );
         }
 
-        if (key === "hdr") {
-          chain = chain.hdrGrade(
-            fxAmt("hdr"),
-            () => resolveParamValue("hdr", "blackFloor", 0.08),
-            () => resolveParamValue("hdr", "highlights", 0.85),
-            () => resolveParamValue("hdr", "knee", 0.5),
-          );
-        }
-
         if (key === "colorLayer") {
           chain = applyColorGrade(chain, "colorLayer");
         }

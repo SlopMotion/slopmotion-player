@@ -1525,32 +1525,6 @@ export function registerHydraShaderFunctions(synth: HydraSynthInstance) {
       });
 
       setFunction({
-        name: "hdrGrade",
-        type: "color",
-        inputs: [
-          { type: "float", name: "amount", default: 0 },
-          { type: "float", name: "blackFloor", default: 0.08 },
-          { type: "float", name: "highlights", default: 0.85 },
-          { type: "float", name: "knee", default: 0.5 },
-        ],
-        glsl: `
-          float a = clamp(amount, 0.0, 1.0);
-          if (a < 0.00001) return _c0;
-          float l = dot(_c0.rgb, vec3(0.2126, 0.7152, 0.0722));
-          float floorPt = clamp(blackFloor, 0.0, 0.35);
-          float soft = clamp(knee, 0.0, 1.0);
-          float band = mix(0.02, 0.18, soft);
-          float shadowMask = smoothstep(floorPt, floorPt + band, l);
-          float ln = l * shadowMask * shadowMask;
-          float hiW = pow(smoothstep(0.45, 1.0, ln), mix(2.8, 1.35, soft));
-          ln += clamp(highlights, 0.0, 2.0) * 0.6 * hiW * (1.0 - ln);
-          float ratio = ln / max(l, 1e-4);
-          vec3 graded = clamp(_c0.rgb * ratio, 0.0, 1.0);
-          return vec4(mix(_c0.rgb, graded, a), _c0.a);
-        `,
-      });
-
-      setFunction({
         name: "lumaPrint",
         type: "color",
         inputs: [
